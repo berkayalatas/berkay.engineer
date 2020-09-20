@@ -258,7 +258,7 @@ header{
 	}
 	
 	.logo h3 {
-		left:20px !important;
+		left: 40px !important;
 		font-size: 1.1rem;
 		top: 5px;
 	}
@@ -299,7 +299,7 @@ header{
 	}
 
 	.fas {
-		padding: 13px;
+		padding: 11px;
 	}
 
 }
