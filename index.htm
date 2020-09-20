@@ -28,53 +28,53 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-      <button
-        class="navbar-toggler"
-        type="button"
-        id="navButton"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container box logo">
+    <header class="fixed-top" >
+
+      <div class="logo">       
         <span style="--i: 1"></span>
         <span style="--i: 2"></span>
         <span style="--i: 3"></span>
-        <a href="#home" class="navbar-default"
-          ><h3 style="margin-left: 120px">Berkay Alatas</h3></a
-        >
-      </div>
+        <a href="#home" id="logoA">
+          <h3 style="position:relative; left: 60px;">Berkay Alatas</h3>
+        </a>
+      </div>   
 
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="navbar-nav nav-links">
-          <li class="nav-item">
-            <a href="#home" class="nav-link active">
+    <nav >
+      <div id="nav__container" class="responsive" >
+        <ul class="nav__links" >
+
+          <li class="nav__item">
+            <a href="#bar" class="nav-icon">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#home" class="">
               <i class="fas fa-home"></i>
               Home
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">
+          <li class="nav__item">
+            <a href="#about" class="">
               <i class="fas fa-address-card icon"></i>
               About
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">
+          <li class="nav__item">
+            <a href="#skills" class="">
               <i class="fas fa-user-cog"></i>
               Skills
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">
+          <li class="nav__item">
+            <a href="#portfolio" class="">
               <i class="fas fa-laptop-code"></i>
               Portfolio
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#contact" id="highlight" class="nav-link">
+          <li class="nav__item">
+            <a href="#contact" id="highlight" class="">
               <i class="fas far fa-envelope"></i>
               Contact
             </a>
@@ -82,6 +82,7 @@
         </ul>
       </div>
     </nav>
+  </header>
 
     <section id="home">
       <div class="container-fluid main-info">

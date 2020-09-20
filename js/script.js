@@ -21,11 +21,16 @@ spans2.forEach(span => span.addEventListener('mouseout', function (e) {
 }))
 
 
+/* Bar icon for responsive website */
+$(".nav-icon").click(function(){
+    $("#nav__container").toggleClass("responsive");
+    return false
+})
 
 
 /* navbar color */
 
-
+/*
 $(window).scroll(function () {
 
     if ($(window).scrollTop() > 100)
@@ -39,7 +44,7 @@ $(window).scroll(function () {
         });
 
 });
-
+*/
 
 
 // bars mouseover
