@@ -256,7 +256,7 @@ header{
 }
 @media (max-width:559px) {
 	.logo {
-		right: 90px;
+		right: 115px;
 	}
 
 	.logo h3 {
@@ -728,6 +728,10 @@ section .about-info {
 	margin: 0;	
 }
 
+section .about-info {
+	padding: 10px;
+}
+
 .about-logos .logos{
 	width: 130px;
 	left: 100px;
@@ -771,6 +775,10 @@ section #seeSkills:hover {
 		left: 50%;
 		
 	}
+
+	section .about-info {
+		padding: 10px;
+	}
 	
 	section #seeSkills {
 		top: 10px;
@@ -797,6 +805,10 @@ section #seeSkills:hover {
 		width: 90%;
 		height: auto;
 		box-shadow: 10px 5px;
+	}
+
+	section .about-info {
+		padding: 10px;
 	}
 	
 	.overlay {
@@ -863,9 +875,9 @@ section #seeSkills:hover {
 		display: none;
 	}
 	
-	
 	section .about-info {
 		font-size: 17px;
+		padding: 10px;
 	}
 	
 	.flex-container{
