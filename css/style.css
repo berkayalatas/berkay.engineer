@@ -121,6 +121,7 @@ header{
 	text-transform: uppercase;
 	font-weight: 600;
 	color: rgb(41, 185, 173) !important;
+	padding: 10px;
 }
 
 .nav__links li a:hover{
@@ -135,7 +136,7 @@ header{
 	color: #00ffd9 !important;
 }
 
-@media all and (min-width:1015px) and (max-width:1235px) {
+@media all and (min-width:1063px) and (max-width:1335px) {
 	
 	header{
 		display: flex;
@@ -155,13 +156,14 @@ header{
 		letter-spacing: 1px;
 		font-size: 15px;
 		font-weight:500;
+		padding: 5px;
 	}
 	
 	.nav__links li a:hover{
 		font-size: 16px;
 	}
 }
-@media all and (min-width:750px) and (max-width:1015px) {
+@media all and (min-width:750px) and (max-width:1063px) {
 	#nav__container {
 		text-align: left;
 		float: none;
@@ -187,12 +189,12 @@ header{
 		letter-spacing: 2px;
 		font-size: 20px;
 		font-weight:600;
-		
+		padding: 10px;
 	}
 	#nav__container .nav-icon{
 		display: flex;
 		position: absolute;
-		top: 13px;
+		top: 5px;
 		right: 80px;
 		font-size: 2.5rem;
 		
@@ -237,12 +239,12 @@ header{
 		letter-spacing: 2px;
 		font-size: 18px;
 		font-weight:500;
-		
+		padding: 10px;
 	}
 	#nav__container .nav-icon{
 		display: flex;
 		position: absolute;
-		top: 13px;
+		top: 5px;
 		right: 50px;
 		font-size: 2.5rem;
 		
@@ -254,13 +256,11 @@ header{
 }
 @media (max-width:559px) {
 	.logo {
-		right: 160px;
+		right: 90px;
 	}
-	
+
 	.logo h3 {
-		left: 40px !important;
-		font-size: 1.1rem;
-		top: 5px;
+		display: none;
 	}
 	
 	.logo h3:hover {
@@ -272,7 +272,7 @@ header{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding: 20px 0px ;
+		padding-top: 20px  ;
 	}
 
 	#nav__container.responsive li:not(:first-child) {
@@ -281,21 +281,23 @@ header{
 
 	#nav__container li:not(:first-child) {
 		position: relative;
-		right: 70px;
+		right: 30px;
 	}
 
 	#nav__container li a {
+		display: flex;
+		flex-direction: row;
 		letter-spacing: 1px;
 		font-size: 19px;
 		font-weight:600;
-		
+		padding: 2px;
 	}
 	#nav__container .nav-icon{
 		display: flex;
 		position: absolute;
-		top: 13px;
+		top: 5px;
 		right: 16px;
-		font-size: 2.3rem;
+		font-size: 2.2rem;
 	}
 
 	.fas {
@@ -898,10 +900,12 @@ section #seeSkills:hover {
 	display: block;
 	overflow: hidden;
 	height: 700px;
+	max-width: 100%;
 }
 
 #skills {
 	height: 700px;
+	max-width: 100%;
 	background-color: rgb(54, 51, 51);
 }
 
