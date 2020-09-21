@@ -157,6 +157,7 @@ header{
 		font-size: 15px;
 		font-weight:500;
 		padding: 5px;
+		
 	}
 	
 	.nav__links li a:hover{
@@ -331,6 +332,7 @@ header{
 	top: 150px;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
+	
 }
 
 .text span {
@@ -573,13 +575,12 @@ section .h2 {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: bolder !important;
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	padding: 15px;
 	margin-left: 30px;
 	text-align: left;
-	border: #fff;
 }
 
 /* about picture */
@@ -664,22 +665,16 @@ section #seeSkills {
 	text-transform: uppercase;
 }
 
-
 section #seeSkills:hover {
 	color: #fff;
 	opacity: 80%;
 	font-size: 1.3rem;
-
-}
-
-@media all and (min-width:320px) and (max-width:480px) {
-
 }
 
 @media (max-width:576px) {
 #about {
-	height: 1400px;
-	position: relative;
+	height: auto;
+	padding-bottom: 100px;
 }
 
 section .h2 {
@@ -717,25 +712,32 @@ section .about-info {
 
 }
 
-.about-logos {
+.flex-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	position: relative;
+	justify-content: center;
 	top: 0px;
-	left: 0px;
+	left: -15px;
 	float: left;
-	padding: 0;
-	margin: 0;	
+	padding: 0%;
+	margin: 0;
+}
+
+.flex-container > div {
+	text-align: center;
+	line-height: 75px;
+	padding: 5px;
 }
 
 section .about-info {
 	padding: 10px;
 }
 
-.about-logos .logos{
-	width: 130px;
-	left: 100px;
-}
+.flex-container .logos{
+	width: 100%;
+	left: 0px;
+} 
 
 section #seeSkills {
 	display: none;
@@ -748,8 +750,8 @@ section #seeSkills:hover {
 }
 @media all and (min-width:577px) and (max-width:768px) {
 	#about {
-		height: 1600px;
-		position: relative;
+		height: auto;
+		padding-bottom: 80px;
 	}
 	
 	section .h2 {
@@ -773,24 +775,42 @@ section #seeSkills:hover {
 		position: absolute;
 		top: 90%;
 		left: 50%;
-		
+	}
+	section .about-info {
+		padding: 10px;
 	}
 
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		justify-content: center;
+		top: 0px;
+		left: -15px;
+		float: left;
+		padding: 0%;
+		margin: 0;
+	}
+	
+	.flex-container > div {
+		text-align: center;
+		line-height: 75px;
+		padding: 5px;
+	}
+	
 	section .about-info {
 		padding: 10px;
 	}
 	
+	.flex-container .logos{
+		width: 100%;
+		left: 0px;
+	} 
+	
 	section #seeSkills {
-		top: 10px;
-		left: 60px;
-		padding: 7px 7px;
-		font-size: 1.2rem;
-		text-align: center;
+		display: none;
 	}
 
-	section #seeSkills:hover {
-		font-size: 1.2rem;
-	}
 	
 }
 @media all and (min-width:769px) and (max-width:992px) {
@@ -921,19 +941,6 @@ section #seeSkills:hover {
 	background-color: rgb(54, 51, 51);
 }
 
-.align-r {
-	color: #0caa92;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 40px;
-	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
-	text-align: center;
-	padding: 15px;
-	margin-left: 30px;
-	text-align: left;
-	border: #fff;
-}
 
 .bar-chart {
 	list-style: none;
@@ -1203,8 +1210,6 @@ section #seeSkills:hover {
 	font-family: 'Poppins', sans-serif;
 }
 
-
-
 .frameworks .framework {
 	position: relative;
 	left: 250px;
@@ -1215,5 +1220,176 @@ section #seeSkills:hover {
 	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
 	border: #fff;
+
+}
+
+
+
+
+
+
+
+@media all and (min-width:300px) and (max-width:480px) {
+
+
+	#bar-chart {
+		overflow: hidden;
+		height: auto;
+		max-width: 100%;
+	}
+	
+	#skills {
+		height:auto;
+		max-width: 100%;
+		background-color: rgb(54, 51, 51);
+		display: flex;
+		flex-direction: row;
+	}
+
+	.bar-chart {
+		list-style: none;
+		height: 450px;
+		width: 100%;
+		position: relative;
+		background-color: #4b3434;
+		padding: 0;
+		left: 0px;
+		margin: 8px;
+		/* Y Axis */
+	}
+	
+	.bar-chart li {
+		display: inline-block;
+		width: 8%;
+		height: 90%;
+		text-align: center;
+		font-weight: 500;
+		color: rgb(48, 7, 7);
+		position: relative;
+		font-size: 10px !important;
+		padding: 10px;
+		margin: 0 1% 1% 0;
+		vertical-align: bottom;
+	}
+	
+	.bar-chart li:nth-child(6n) {
+		margin-right: 0;
+	}
+
+	.bar-chart .percent {
+		opacity: 0.5;
+		position: absolute;
+		bottom: 100px;
+		font-size:20px;
+		width: 100%;
+		line-height: 10px;
+		left: 3px;
+	}
+	
+	.bar-chart .percent span {
+		font-size: 15px;
+		padding-left: 0px;
+		position: relative;
+		bottom: 20px;
+		left: -20px;
+	}
+	
+	.bar-chart .skill {
+		transform: rotate(270deg);
+		bottom: 150px;
+		width: 100%;
+		left: -3px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.bar-chart li.axis {
+		right: 30px;
+		width: 24%;
+		border: 1px;
+		border-right: rgb(10, 2, 2) solid 1px;
+		height: 450px;
+		background: #464545;
+	
+	}
+	
+	.bar-chart .label {
+		color: rgb(29, 150, 140);
+		opacity: 1;
+		margin: 0 0 80px 0;
+		font-size: 10px;
+		font-weight: 600;
+		background-color: #414144;
+	}
+	
+	
+	.bar-chart .label:hover {
+		opacity: 0.8;
+		margin: 0em 0 90px 0;
+		font-size: 10px;
+		font-weight: 600;
+	}
+	
+	.frameworks .framework {
+		position: relative;
+		left: 0px;
+		color: #0caa92;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 20px;
+		font-weight: 700;
+		font-family: 'Poppins', sans-serif;
+		border: #fff;
+	
+	}
+	
+
+.bar-chart .p-50 {
+	height: 50%;
+	width: 25px;
+	left: 25px !important;
+}
+
+
+.bar-chart #brown2{
+	left: 25px !important;
+}
+
+
+.bar-chart #brown{
+	left: 10px !important;
+}
+
+
+.bar-chart .p-75 {
+	height: 75%;
+	width: 25px;
+	left: 8px !important;
+}
+
+
+.bar-chart .p-80 {
+	height: 80%;
+	width: 25px;
+	left: -2px !important;
+}
+
+.bar-chart .p-85 {
+	height: 85%;
+	width: 25px;
+	left: -10px !important;
+}
+
+.bar-chart .p-95 {
+	height: 95%;
+	width: 25px;
+	left:-20px !important;
+}
+
+}
+
+
+@media all and (min-width:481px) and (max-width:700px) {
+
 
 }
