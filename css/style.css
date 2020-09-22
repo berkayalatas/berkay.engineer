@@ -1601,7 +1601,7 @@ section #seeSkills:hover {
 		padding: 2px;
 		text-align: left;
 		margin: -0.6em 0 90px 0;
-		font-size: 1rem;
+		font-size: 14px;
 		font-weight: 600;
 		background-color: #27272b;
 		font-family: 'Poppins', sans-serif;
@@ -1612,7 +1612,7 @@ section #seeSkills:hover {
 		color: rgb(35, 201, 187);
 		opacity: 0.8;
 		margin: -0.6em 0 90px 0;
-		font-size: 1.2rem;
+		font-size: 14px;
 		font-weight: 600;
 		background-color: #404055;
 		font-family: 'Poppins', sans-serif;
