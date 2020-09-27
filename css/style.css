@@ -53,7 +53,8 @@ header {
 	padding: 2px 5%;
 	background-color: rgb(19, 18, 18);
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
+	
 }
 
 .logo {
@@ -2296,7 +2297,8 @@ textarea.contactForm {
 
 #sendButton {
 	border-radius: 10%;
-	width: 50%;
+	width: 30%;
+	height: 40px;
 	text-align: center;
 	position: relative;
 	left: 40%;
@@ -2306,6 +2308,7 @@ textarea.contactForm {
 	color: #00ffd9;
 	text-transform: uppercase;
 	background: #221e1e;
+	margin-top: 20px;
 }
 
 #sendButton:hover {
@@ -2346,6 +2349,8 @@ textarea.contactForm {
 	}
 
 }
+
+
 
 
 /* footer section */

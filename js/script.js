@@ -1,4 +1,4 @@
-
+ 
 const spans = document.querySelectorAll('h1 span');
 const spans2 = document.querySelectorAll('h2 span');
 
@@ -29,21 +29,27 @@ $(".nav-icon").click(function(){
 })
 
 
-/* navbar color */
-$(window).scroll(function () {
 
-    if ($(window).scrollTop() < 100)
-        $("header").css({
-            "background-color": "rgba(0,0,0,.5)"
-            
-        });
+/* navbar */
+var ww = $(window).width();
 
-    else
-        $("header").css({
-            "background-color": "rgb(15, 14, 14)",
-        });
-});
+if (ww > 500) {
 
+    $(window).scroll(function () {
+
+        if ($(window).scrollTop() < 100)
+            $("header").css({
+                "background-color": "rgba(0,0,0,.5)"
+            });
+
+        else
+            $("header").css({
+                "background-color": "rgb(15, 14, 14)",
+            });
+    });
+
+
+}
 
 
 // bars mouseover
@@ -142,11 +148,27 @@ function topFunction() {
 //enf of the top button
 
 
-/* form js */
+/* Contact with Email*/
 $('#alert').hide()
 
-const name = $('#fullname')
-const email = $('#email')
-const textMessage = $('#textarea')
+const name = $('#fullname').val()
+const email = $('#email').val()
+const textMessage = $('#textarea').val()
 const form = $('#form')
+const alert = $('#alert')
+
+form.submit(function generateEmail(e){
+    
+    var emailTo = "berkay3304@gmail.com";
+    var emailBody = `Message:  ${$('#textarea').val()}  Contact:  ${$('#email').val()}`; 
+    var emailSubject = "Work " + $('#fullname').val() 
+    location.href = "mailto:" + emailTo + "?" + 
+        (emailBody ? "&body=" + emailBody : "") + 
+        (emailSubject ? "&subject=" + emailSubject : "");
+
+    e.preventDefault()
+ 
+})
+
+
 

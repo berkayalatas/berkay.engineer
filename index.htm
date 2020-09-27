@@ -416,20 +416,15 @@
       </div>
       <div class="contact_container" id="contact">
         <div class="form_container">
-          <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert"
-            style="position: relative; left:20px">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div>
-            <form action="" id="form">
+            <form action="/" id="form" method="GET">
               <input
                 type="text"
                 id="fullname"
                 class="contactForm"
                 name="name"
                 placeholder="Full Name..."
+              
               />
               <br />
               <input type="email" id="email" placeholder="E-mail..."
@@ -442,9 +437,10 @@
                 cols="35"
                 rows="10"
                 placeholder="Message..."
+                
               ></textarea>
               <br />
-              <input id="sendButton" type="submit" value="Send" />
+              <button id="sendButton" type="submit"  onclick="generateEmail()">Send</button>
             </form>
           </div>
         </div>
