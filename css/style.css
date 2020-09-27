@@ -257,11 +257,11 @@ header {
 
 @media (max-width:559px) {
 	.logo {
-		right: 115px;
+		right: 80px;
 	}
 
 	.logo h3 {
-		display: none;
+		 display: none;
 	}
 
 	.logo h3:hover {
@@ -2346,8 +2346,6 @@ textarea.contactForm {
 	}
 
 }
-
-
 
 
 /* footer section */
