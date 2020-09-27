@@ -1,3 +1,4 @@
+
 const spans = document.querySelectorAll('h1 span');
 const spans2 = document.querySelectorAll('h2 span');
 
@@ -29,22 +30,20 @@ $(".nav-icon").click(function(){
 
 
 /* navbar color */
-
-/*
 $(window).scroll(function () {
 
-    if ($(window).scrollTop() > 100)
-        $("nav").css({
+    if ($(window).scrollTop() < 100)
+        $("header").css({
             "background-color": "rgba(0,0,0,.5)"
+            
         });
 
     else
-        $("nav").css({
-            "background-color": "rgb(15, 14, 14)"
+        $("header").css({
+            "background-color": "rgb(15, 14, 14)",
         });
-
 });
-*/
+
 
 
 // bars mouseover
@@ -121,4 +120,33 @@ $("section .p-50").mouseleave(function () {
 // bars mouseover end
 
 
- 
+
+//to top button
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+//enf of the top button
+
+
+/* form js */
+$('#alert').hide()
+
+const name = $('#fullname')
+const email = $('#email')
+const textMessage = $('#textarea')
+const form = $('#form')
+
