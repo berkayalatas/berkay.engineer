@@ -10,9 +10,11 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	/*background-image: linear-gradient(35deg, #1a1818, #0a2727);*/
+	background-image: linear-gradient(35deg, #1a1818, #0a2727);
 }
 
+
+ 
 
 /*  infinite animation  */
 .logo {
@@ -1848,7 +1850,6 @@ section #seeSkills:hover {
 	padding: 1px;
 	border-radius: 15px;
 	font-size: 25px;
-
 }
 
 #myBtn:hover {
@@ -1894,12 +1895,6 @@ section #seeSkills:hover {
 	-moz-transform: translate3d(0, 0, 0);
 }
 
-@media (min-width: 900px) {
-
-	.news-card {
-		height: 20rem
-	}
-}
 
 .news-card::before {
 	content: '';
@@ -1961,7 +1956,30 @@ section #seeSkills:hover {
 	transition: max-height 1.5s ease, opacity 1s ease;
 }
 
+.news-card__details-wrapper .news-card__view{
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.news-card__details-wrapper .news-card__view:hover{
+	color: rgb(8, 214, 250);
+	background-image: linear-gradient(35deg, #1a1818, #0a2727);
+	transition: 0.5s !important;
+}
+
+.news-card__details-wrapper .news-card__excerpt{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+ 
 @media (min-width: 900px) {
+
+	.news-card {
+		height: 20rem
+	}
+
 	.news-card:hover .news-card__details-wrapper {
 		max-height: 20rem;
 		opacity: 1;
@@ -1985,7 +2003,7 @@ section #seeSkills:hover {
 	font-weight: 300;
 }
 
-.news-card__read-more {
+.news-card__view{
 	background: black;
 	color: #bbb;
 	display: block;
@@ -2003,7 +2021,7 @@ section #seeSkills:hover {
 	z-index: 5;
 }
 
-.news-card__read-more i {
+.news-card__view i {
 	position: relative;
 	left: 0.2rem;
 	color: #888;
@@ -2012,7 +2030,7 @@ section #seeSkills:hover {
 	backface-visibility: hidden;
 }
 
-.news-card__read-more:hover i {
+.news-card__view:hover i {
 	left: 0.5rem;
 	color: yellow;
 }
@@ -2043,10 +2061,6 @@ section #seeSkills:hover {
 	flex: 3;
 	order: 2;
 }
-
-
- 
-
 
 
 .logo_container {
@@ -2168,3 +2182,9 @@ footer p {
 	padding: 20px 0;
 	margin: 0;
 }
+
+
+
+
+ 
+ 
