@@ -953,6 +953,14 @@ section #seeSkills:hover {
 	}
 }
 
+@media (min-width:1400px) {
+	section #me {
+		width: 90%;
+		height: 120%;
+		box-shadow: 5px 5px 5px 3px #223a2f;
+	}
+} 
+
 /* Bar Chart */
 #bar-chart {
 	height: auto;
