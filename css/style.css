@@ -944,7 +944,7 @@ section #seeSkills:hover {
 
 
 #skills {
-	height: 700px;
+	height: 770px;
 	max-width: 100%;
 	background-image: linear-gradient(35deg, #1a1818, #0a2727);
 }
@@ -1852,9 +1852,10 @@ section #seeSkills:hover {
 
 #portfolio_section {
 	width: auto;
-	height: auto;
+	height: 100%;
 	overflow-x: hidden;
 	background-image: linear-gradient(35deg, #1a1818, #0a2727);
+	 
 }
 
 #cardHeader {
