@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class=" loading fixed-top">
+    <header class="loading fixed-top">
       <div class="logo">
         <span style="--i: 1"></span>
         <span style="--i: 2"></span>
@@ -68,7 +68,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#cardHeader" class="">
+              <a href="#portfolio" class="">
                 <i class="fas fa-laptop-code"></i>
                 Portfolio
               </a>
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section >
+    <section>
       <div id="about" class="container-fluid">
         <h2 class="h2 text">
           <span>About Me</span>
@@ -274,133 +274,141 @@
     </button>
 
     <section id="portfolio_section">
-      <div id="cardHeader">
+      <div id="portfolio">
         <h2 class="h2 text">
-          <span>PROJECTS</span>
+          <span>Projects</span>
         </h2>
-      </div>
-      <div id="portfolio" class="flex_container">
-        <div class="flip-card-container" style="--hue: 220">
-          <div class="flip-card">
-            <div class="card-front">
-              <figure>
-                <div class="img-bg"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80"
-                  alt="Card 1"
-                />
-                <figcaption>Project 1</figcaption>
-              </figure>
-
-              <ul>
-                <li>DETAILS:</li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  sapiente animi officia minima ab suscipit libero harum saepe
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-back">
-              <figure>
-                <div class="img-bg"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80"
-                  alt="Card 1"
-                />
-              </figure>
-
-              <button>View Project</button>
-
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+        <div class="content-wrapper">
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">Project 1</h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  pariatur nemo tempore repellat? Ullam sed officia iure
+                  architecto deserunt distinctio, pariatur&hellip;
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="flip-card-container" style="--hue: 170">
-          <div class="flip-card">
-            <div class="card-front">
-              <figure>
-                <div class="img-bg"></div>
-                <img src="css/images/card3.jpg" alt="Card 2" />
-                <figcaption>Project 2</figcaption>
-              </figure>
-
-              <ul>
-                <li>DETAILS:</li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  sapiente animi officia minima ab suscipit libero harum saepe
-                </li>
-              </ul>
-            </div>
-
-            <div class="card-back">
-              <figure>
-                <div class="img-bg"></div>
-                <img src="css/images/card3.jpg" alt="Card 2" />
-              </figure>
-
-              <button>View Project</button>
-
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card2.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">
+                Project 2
+              </h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam obcaecati ex natus nulla rem sequi laborum quod
+                  fugit&hellip;
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="flip-card-container" style="--hue: 350">
-          <div class="flip-card">
-            <div class="card-front">
-              <figure>
-                <div class="img-bg"></div>
-                <img src="css/images/card4.jpg" alt="Card 3" />
-                <figcaption>Project 3</figcaption>
-              </figure>
-
-              <ul>
-                <li>DETAILS:</li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  sapiente animi officia minima ab suscipit libero harum saepe
-                </li>
-              </ul>
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card3.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">Project 3</h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis beatae&hellip;
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
             </div>
+          </div>
 
-            <div class="card-back">
-              <figure>
-                <div class="img-bg"></div>
-                <img src="css/images/card4.jpg" alt="Card 3" />
-              </figure>
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card4.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">
+                Project 4
+              </h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam obcaecati ex natus nulla rem sequi laborum quod
+                  fugit&hellip;
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
 
-              <button>View Project</button>
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">Project 5</h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  pariatur nemo tempore repellat? Ullam sed officia iure
+                  architecto deserunt distinctio&hellip;
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View<i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
 
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+          <div class="news-card">
+            <a href="#" class="news-card__card-link"></a>
+            <img
+              src="css/images/card3.jpg"
+              alt=""
+              class="news-card__image"
+            />
+            <div class="news-card__text-wrapper">
+              <h2 class="news-card__title">Project 6</h2>
+              <div class="news-card__details-wrapper">
+                <p class="news-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  pariatur nemo tempore repellat? Ullam sed officia.
+                </p>
+                <a href="#" class="news-card__read-more"
+                  >View <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -414,7 +422,7 @@
           <span>CONTACT</span>
         </h2>
       </div>
-      <div class="contact_container" id="contact">
+      <div class="contact_container">
         <div class="form_container">
           <div>
             <form action="/" id="form" method="GET">
@@ -424,11 +432,14 @@
                 class="contactForm"
                 name="name"
                 placeholder="Full Name..."
-              
               />
               <br />
-              <input type="email" id="email" placeholder="E-mail..."
-              class="contactForm" />
+              <input
+                type="email"
+                id="email"
+                placeholder="E-mail..."
+                class="contactForm"
+              />
               <br />
               <textarea
                 name="message"
@@ -437,37 +448,51 @@
                 cols="35"
                 rows="10"
                 placeholder="Message..."
-                
               ></textarea>
               <br />
-              <button id="sendButton" type="submit"  onclick="generateEmail()">Send</button>
+              <button id="sendButton" type="submit" onclick="generateEmail()">
+                Send
+              </button>
             </form>
           </div>
         </div>
         <div class="logo_container">
           <div>
             <a href="mailto:berkay3304@gmail.com" target="_blank"
-              ><img src="https://img.icons8.com/doodle/96/000000/apple-mail.png"/></a>
+              ><img
+                src="https://img.icons8.com/doodle/96/000000/apple-mail.png"
+            /></a>
           </div>
           <div>
-            <a href="https://github.com/berkayalatas"  target="_blank"
-              ><img src="https://img.icons8.com/material-sharp/100/000000/github.png"/></a>
+            <a href="https://github.com/berkayalatas" target="_blank"
+              ><img
+                src="https://img.icons8.com/material-sharp/100/000000/github.png"
+            /></a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/berkay-alatas-5966831a7/"  target="_blank"
-              ><img src="https://img.icons8.com/doodle/96/000000/linkedin--v2.png"/></a>
+            <a
+              href="https://www.linkedin.com/in/berkay-alatas-5966831a7/"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/doodle/96/000000/linkedin--v2.png"
+            /></a>
           </div>
           <div>
             <a href="https://twitter.com/berkayalatas1" target="_blank"
-              ><img src="https://img.icons8.com/doodle/96/000000/twitter--v1.png"/></a>
+              ><img
+                src="https://img.icons8.com/doodle/96/000000/twitter--v1.png"
+            /></a>
           </div>
           <div>
             <a href="https://dev.to/berkayalatas" target="_blank"
-              ><img src="https://img.icons8.com/windows/96/000000/dev.png"/></a>
+              ><img src="https://img.icons8.com/windows/96/000000/dev.png"
+            /></a>
           </div>
           <div>
             <a href="https://www.instagram.com/berkayalatas" target="_blank"
-              ><img src="https://img.icons8.com/fluent/96/000000/instagram-new.png"/></a>
+              ><img
+                src="https://img.icons8.com/fluent/96/000000/instagram-new.png"
+            /></a>
           </div>
         </div>
       </div>
