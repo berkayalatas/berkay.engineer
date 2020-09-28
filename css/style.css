@@ -269,7 +269,7 @@ header {
 
 @media (max-width:559px) {
 	.logo {
-		right: 80px;
+		right: 90px;
 	}
 
 	.logo h3 {
@@ -439,7 +439,7 @@ section #empty {
 	.text a {
 		padding: 15px 20px;
 		color: #fff;
-		font-size: 10px;
+		font-size: 13px;
 		left: 120px;
 		top: 220px;
 	}
@@ -447,7 +447,7 @@ section #empty {
 	.text a:hover {
 		padding: 15px 20px;
 		color: #fff;
-		font-size: 10px;
+		font-size: 13px;
 		left: 130px;
 		top: 220px;
 	}
