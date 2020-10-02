@@ -152,7 +152,7 @@ const alert = $('#alert')
 form.submit(function generateEmail(e) {
 
 	var emailTo = "berkay3304@gmail.com";
-	var emailBody = `Message:  ${$('#textarea').val()}  Contact:  ${$('#email').val()}`;
+	var emailBody = `${$('#textarea').val()}  Contact:  ${$('#email').val()}`;
 	var emailSubject = "Work " + $('#fullname').val()
 	location.href = "mailto:" + emailTo + "?" +
 		(emailBody ? "&body=" + emailBody : "") +
