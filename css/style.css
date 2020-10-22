@@ -2112,6 +2112,7 @@ section #seeSkills:hover {
 .news-card__title {
 	transition: color 1s ease;
 	margin-bottom: .5rem;
+	text-align: center;
 }
 
 .news-card__post-info {
@@ -2334,8 +2335,6 @@ textarea.contactForm {
 	}
 
 }
-
-
 
 /* footer section */
 footer {
